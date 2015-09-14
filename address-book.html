@@ -23,11 +23,25 @@
               <label for="new-last-name">Last name</label>
               <input type="text" class="form-control" id="new-last-name">
             </div>
-            <div class="form-group">
-              <label for="new-address">Address</label>
-              <input type="text" class="form-control" id="new-address">
+
+            <div id="new-addresses">
+              <div class="new-address">
+                <div class="form-group">
+                  <label for="new-street">Street</label>
+                  <input type="text" class="form-control new-street">
+                </div>
+                <div class="form-group">
+                  <label for="new-city">City</label>
+                  <input type="text" class="form-control new-city">
+                </div>
+                <div class="form-group">
+                  <label for="new-state">State</label>
+                  <input type="text" class="form-control new-state">
+                </div>
+              </div>
             </div>
 
+            <span class="btn btn-primary" id="add-address">Another address</span>
             <button type="submit" class="btn">Add</button>
           </form>
 
@@ -35,17 +49,19 @@
           <ul id="contacts">
 
           </ul>
+        </div>
 
-          <div class="col-md-6">
-            <div id="show-contact">
-              <h2></h2>
+        <div class="col-md-6">
+          <div id="show-contact">
+            <h2></h2>
 
-              <p>First name: <span class="first-name"></span></p>
-              <p>Last name: <span class="last-name"></span></p>
-              <p>Address: <span class="address"></span></p>
-            </div>
+            <p>First name: <span class="first-name"></span></p>
+            <p>Last name: <span class="last-name"></span></p>
+            <p>Address:</p>
+            <ul id="addresses">
+
+            </ul>
           </div>
-
         </div>
       </div>
     </div>
