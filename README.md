@@ -1,14 +1,12 @@
-# _App Name_
+# _Address Book_
 
-##### This app allows you to .....
+##### This app in an address book website that allows the input of multiple addresses.
 
 #### By _**Yelena Nedelko**_
 
 ## Description
 
-_Users can:_
-
-* _....._
+_The goal of this app was to create a contact object and an address object and then add addresses to the contact object. This created a relationship between the contact object and the many possible address objects that it can store._
 
 
 ## Technology Used
