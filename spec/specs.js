@@ -19,4 +19,9 @@ describe('Address', function() {
     expect(testAddress.city).to.equal("Happyville");
     expect(testAddress.state).to.equal("Oregon");
   });
+
+  it("adds the fullAddress method to all addresses", function() {
+    var testAddress = new Address("123 Happy Lane", "Happyville", "Oregon");
+    expect(testAddress.fullAddress()).to.equal("123 Happy Lane, Happyville, Oregon");
+  });
 });
