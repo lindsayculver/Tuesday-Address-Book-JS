@@ -1,12 +1,12 @@
-# _Address Book_
+# _Address Book part 2_
 
 ##### This app in an address book website that allows the input of multiple addresses.
 
-#### By _**Yelena Nedelko**_
+#### By _**Lindsay Culver and Yelena Nedelko**_
 
 ## Description
 
-_The goal of this app was to create a contact object and an address object and then add addresses to the contact object. This created a relationship between the contact object and the many possible address objects that it can store._
+_The goal of this app was to create a contact object and an address object and then add addresses to the contact object. This created a relationship between the contact object and the many possible address objects that it can store. Prototypes and Constructors were added to code._
 
 
 ## Technology Used
@@ -16,7 +16,7 @@ _The goal of this app was to create a contact object and an address object and t
 
 ### Legal
 
-Copyright (c) 2015 **_Yelena Nedelko_**
+Copyright (c) 2015 **_Lindsay Culver and Yelena Nedelko_**
 
 This software is licensed under the MIT license.
 
