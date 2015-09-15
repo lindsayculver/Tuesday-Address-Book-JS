@@ -5,4 +5,8 @@ describe('Contact', function() {
     expect(testContact.lastName).to.equal("Patootie");
     expect(testContact.addresses).to.eql([]);
   });
+  it("adds the fullName method to all contacts", function() {
+    var testContact = new Contact("Yucky", "Ducky");
+    expect(testContact.fullName()).to.equal("Yucky Ducky");
+  });
 });
