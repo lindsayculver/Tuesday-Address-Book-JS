@@ -5,8 +5,18 @@ describe('Contact', function() {
     expect(testContact.lastName).to.equal("Patootie");
     expect(testContact.addresses).to.eql([]);
   });
+
   it("adds the fullName method to all contacts", function() {
     var testContact = new Contact("Yucky", "Ducky");
     expect(testContact.fullName()).to.equal("Yucky Ducky");
+  });
+});
+
+describe('Address', function() {
+  it("creates a new address with the given specifications", function() {
+    var testAddress = new Address("123 Happy Lane", "Happyville", "Oregon");
+    expect(testAddress.street).to.equal("123 Happy Lane");
+    expect(testAddress.city).to.equal("Happyville");
+    expect(testAddress.state).to.equal("Oregon");
   });
 });
