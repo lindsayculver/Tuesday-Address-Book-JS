@@ -26,6 +26,7 @@ function resetFields() {
   $("input.new-street").val("");
   $("input.new-city").val("");
   $("input.new-state").val("");
+  $("div.new-address").not(":first").remove();
 }
 
 $(document).ready(function() {
@@ -71,7 +72,7 @@ $(document).ready(function() {
     $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
     $(".contact").last().click(function() {
-      $("#show-contact").show();
+      $("#show-contact").fadeIn(1400);
 
       $("#show-contact h2").text(newContact.firstName);
       $(".first-name").text(newContact.firstName);
