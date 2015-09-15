@@ -1,3 +1,9 @@
+function Contact(firstName, lastName){
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.addresses = [];
+}
+
 $(document).ready(function() {
   $("#add-address").click(function() {
     $("#new-addresses").append('<div class="new-address">' +
