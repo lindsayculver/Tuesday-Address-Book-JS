@@ -14,14 +14,15 @@ describe('Contact', function() {
 
 describe('Address', function() {
   it("creates a new address with the given specifications", function() {
-    var testAddress = new Address("123 Happy Lane", "Happyville", "Oregon");
+    var testAddress = new Address("Home", "123 Happy Lane", "Happyville", "Oregon");
+    expect(testAddress.kind).to.equal("Home");
     expect(testAddress.street).to.equal("123 Happy Lane");
     expect(testAddress.city).to.equal("Happyville");
     expect(testAddress.state).to.equal("Oregon");
   });
 
   it("adds the fullAddress method to all addresses", function() {
-    var testAddress = new Address("123 Happy Lane", "Happyville", "Oregon");
-    expect(testAddress.fullAddress()).to.equal("123 Happy Lane, Happyville, Oregon");
+    var testAddress = new Address("Home","123 Happy Lane", "Happyville", "Oregon");
+    expect(testAddress.fullAddress()).to.equal("Home, 123 Happy Lane, Happyville, Oregon");
   });
 });
